@@ -1,0 +1,42 @@
+/** @format */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr); /* 5 колонок */
+	grid-template-rows: repeat(5, 1fr); /* 5 строк */
+	gap: 1px;
+	width: 400px;
+	height: 400px;
+}
+
+.grid-cell {
+	border: 1px solid #ccc;
+	position: relative;
+	background-color: #f0f0f0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid-cell.occupied {
+	background-color: #ccc;
+}
+
+.grid-cell.hovered {
+	background-color: #bada55;
+}
+
+.grid-item {
+	width: 80%;
+	height: 80%;
+	background-color: #4caf50;
+	color: white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: grab;
+}
+
+.grid-item:active {
+	cursor: grabbing;
+}
