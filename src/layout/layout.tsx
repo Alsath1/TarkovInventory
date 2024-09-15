@@ -1,3 +1,5 @@
-export const layout = () => {
-	return <section></section>;
+import React from 'react';
+import style from './layout.module.sass';
+export const Layout = ({ children }) => {
+	return <section>{children}</section>;
 };
